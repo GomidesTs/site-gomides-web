@@ -1,113 +1,116 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <div className="flex h-screen flex-col items-center justify-center">
+        <h1 className="text-center text-3xl font-bold">
+          Uma nova dimensão para a presença online da sua empresa
+        </h1>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <p className="text-x">
+          Crie uma experiência única e marcante para seus clientes com nossos
+          serviços de design e desenvolvimento web totalmente personalizados.
+        </p>
+
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="pt-8"
+          src="/dimensions.svg"
+          width={500}
+          height={500}
+          alt="Várias perspectivas"
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col gap-6">
+          <h2 className="text-2xl font-bold">Código sob medida</h2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-x">
+            Com a nossa expertise em desenvolvimento tecnológico, criamos
+            soluções exclusivas que se adaptam perfeitamente às suas
+            necessidades, garantindo uma presença online única e de alto
+            desempenho. Desde o design até a codificação do seu produto,
+            personalizamos cada etapa para atender às suas necessidades
+            específicas, transformando a sua realidade digital e alcançando um
+            maior número de clientes satisfeitos.
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+        <Image
+          src="/code.svg"
+          width={400}
+          height={400}
+          alt="Várias perspectivas"
+        />
+      </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* <div className="flex  flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold">Serviços</h2>
+        <div>cart</div>
+      </div> */}
+
+      <div className="flex flex-col-reverse items-center justify-center pt-64">
+        <Image
+          src="/iPhone.svg"
+          width={200}
+          height={200}
+          alt="Várias perspectivas"
+        />
+
+        <div>
+          <h2 className="text-2xl font-bold">
+            Entre em contato de forma rápida e direta
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className="text-x">
+            Estamos prontos para atender suas dúvidas e oferecer soluções
+            personalizadas. Converse com nossa equipe via WhatsApp e comece a
+            transformar sua presença online hoje mesmo.
           </p>
-        </a>
+        </div>
+      </div>
+
+      {/* <div className="flex  flex-col items-center justify-center">
+        <h2>Trabalhos excepcionais e feedbacks positivos</h2>
+
+        <p className="text-x">
+          Confira alguns dos nossos projetos de sucesso e descubra como ajudamos
+          empresas a alcançar seus objetivos online. Nossa paixão é criar
+          resultados extraordinários para nossos clientes.
+        </p>
+
+        <div>depots</div>
+      </div> */}
+
+      <div className="flex flex-col items-center justify-center pt-64">
+        <div>
+          <h2>Potencialize sua Presença Online</h2>
+
+          <p className="text-x">
+            Se você busca alcançar resultados extraordinários na era digital,
+            nós podemos ajudar. Com nossa expertise em design e desenvolvimento
+            web, oferecemos soluções sob medida para impulsionar sua presença
+            online e atrair mais clientes.
+          </p>
+        </div>
+        <Image
+          src="/grafo.svg"
+          width={400}
+          height={400}
+          alt="Várias perspectivas"
+        />
+      </div>
+
+      <div className="mt-64 flex flex-col items-center justify-center rounded bg-cyan-300/50 p-4">
+        <h2>Faça parte da nossa galeria de sucessos</h2>
+        <p>
+          Queremos destacar o seu projeto e compartilhar o seu sucesso com o
+          mundo! Ao escolher nossos serviços de design e desenvolvimento web,
+          você terá a oportunidade de ter o seu projeto em nossa galeria de
+          sucessos, mostrando como sua empresa alcançou resultados
+          extraordinários
+        </p>
       </div>
     </main>
-  )
+  );
 }
