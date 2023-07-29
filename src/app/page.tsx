@@ -8,7 +8,7 @@ export default function Home() {
           Uma nova dimensão para a presença online da sua empresa
         </h1>
 
-        <p className="text-x">
+        <p className="text-x mt-6">
           Crie uma experiência única e marcante para seus clientes com nossos
           serviços de design e desenvolvimento web totalmente personalizados.
         </p>
@@ -38,6 +38,7 @@ export default function Home() {
         </div>
 
         <Image
+          className="mt-12"
           src="/code.svg"
           width={400}
           height={400}
@@ -52,6 +53,7 @@ export default function Home() {
 
       <div className="flex flex-col-reverse items-center justify-center pt-64">
         <Image
+          className="mt-12"
           src="/iPhone.svg"
           width={200}
           height={200}
@@ -62,7 +64,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold">
             Entre em contato de forma rápida e direta
           </h2>
-          <p className="text-x">
+          <p className="text-x mt-6">
             Estamos prontos para atender suas dúvidas e oferecer soluções
             personalizadas. Converse com nossa equipe via WhatsApp e comece a
             transformar sua presença online hoje mesmo.
@@ -84,9 +86,11 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center pt-64">
         <div>
-          <h2>Potencialize sua Presença Online</h2>
+          <h2 className="text-2xl font-bold">
+            Potencialize sua Presença Online
+          </h2>
 
-          <p className="text-x">
+          <p className="text-x mt-6">
             Se você busca alcançar resultados extraordinários na era digital,
             nós podemos ajudar. Com nossa expertise em design e desenvolvimento
             web, oferecemos soluções sob medida para impulsionar sua presença
@@ -94,6 +98,7 @@ export default function Home() {
           </p>
         </div>
         <Image
+          className="mt-12"
           src="/grafo.svg"
           width={400}
           height={400}
@@ -101,15 +106,22 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-64 flex flex-col items-center justify-center rounded bg-cyan-300/50 p-4">
-        <h2>Faça parte da nossa galeria de sucessos</h2>
-        <p>
+      <div className="bg-cyan-300/50 mt-64 flex flex-col items-center justify-center rounded bg-white-100 px-4 py-8">
+        <h2 className="text-2xl font-bold">
+          Faça parte da nossa galeria de sucessos
+        </h2>
+
+        <p className="mt-6">
           Queremos destacar o seu projeto e compartilhar o seu sucesso com o
           mundo! Ao escolher nossos serviços de design e desenvolvimento web,
           você terá a oportunidade de ter o seu projeto em nossa galeria de
           sucessos, mostrando como sua empresa alcançou resultados
           extraordinários
         </p>
+
+        <button className="mt-8 w-2/4 rounded bg-blue-500 p-4 text-white-100">
+          Fortaleca sua marca
+        </button>
       </div>
     </main>
   );
