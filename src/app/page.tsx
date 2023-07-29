@@ -1,10 +1,14 @@
 import Image from 'next/image';
 
+import { servicesConfig } from '@/config';
+
+import { Services } from '@/components/Services';
+
 export default function Home() {
   return (
     <main>
       <div className="flex h-screen flex-col items-center justify-center">
-        <h1 className="text-center text-3xl font-bold">
+        <h1 className="text-center text-3xl font-bold text-blue-500">
           Uma nova dimensão para a presença online da sua empresa
         </h1>
 
@@ -24,7 +28,9 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-6">
-          <h2 className="text-2xl font-bold">Código sob medida</h2>
+          <h2 className=" text-2xl font-bold text-blue-500">
+            Código sob medida
+          </h2>
 
           <p className="text-x">
             Com a nossa expertise em desenvolvimento tecnológico, criamos
@@ -46,10 +52,12 @@ export default function Home() {
         />
       </div>
 
-      {/* <div className="flex  flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold">Serviços</h2>
-        <div>cart</div>
-      </div> */}
+      <div className="mt-64  flex flex-col items-center justify-center">
+        <h2 className=" text-2xl font-bold text-blue-500">Serviços</h2>
+        <div className="mt-8 flex flex-col gap-6">
+          <Services items={servicesConfig} />
+        </div>
+      </div>
 
       <div className="flex flex-col-reverse items-center justify-center pt-64">
         <Image
@@ -61,7 +69,7 @@ export default function Home() {
         />
 
         <div>
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl font-bold text-blue-500">
             Entre em contato de forma rápida e direta
           </h2>
           <p className="text-x mt-6">
@@ -86,7 +94,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center pt-64">
         <div>
-          <h2 className="text-2xl font-bold">
+          <h2 className=" text-2xl font-bold text-blue-500">
             Potencialize sua Presença Online
           </h2>
 
@@ -107,7 +115,7 @@ export default function Home() {
       </div>
 
       <div className="bg-cyan-300/50 mt-64 flex flex-col items-center justify-center rounded bg-white-100 px-4 py-8">
-        <h2 className="text-2xl font-bold">
+        <h2 className=" text-2xl font-bold text-blue-500">
           Faça parte da nossa galeria de sucessos
         </h2>
 
