@@ -29,24 +29,26 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col gap-6">
-          <h2 className=" text-2xl font-bold text-blue-500">
-            Código sob medida
-          </h2>
+      <div className="flex flex-col items-center justify-center xl:flex-row xl:gap-4">
+        <div className="flex flex-col items-center justify-center xl:items-start">
+          <div className="flex flex-col gap-6">
+            <h2 className=" text-2xl font-bold text-blue-500">
+              Código sob medida
+            </h2>
 
-          <p className="text-x">
-            Com a nossa expertise em desenvolvimento tecnológico, criamos
-            soluções exclusivas que se adaptam perfeitamente às suas
-            necessidades, garantindo uma presença online única e de alto
-            desempenho. Desde o design até a codificação do seu produto,
-            personalizamos cada etapa para atender às suas necessidades
-            específicas, transformando a sua realidade digital e alcançando um
-            maior número de clientes satisfeitos.
-          </p>
+            <p className="text-x">
+              Com a nossa expertise em desenvolvimento tecnológico, criamos
+              soluções exclusivas que se adaptam perfeitamente às suas
+              necessidades, garantindo uma presença online única e de alto
+              desempenho. Desde o design até a codificação do seu produto,
+              personalizamos cada etapa para atender às suas necessidades
+              específicas, transformando a sua realidade digital e alcançando um
+              maior número de clientes satisfeitos.
+            </p>
+          </div>
+
+          <Button text="Transforme agora" />
         </div>
-
-        <Button text="Transforme agora" />
 
         <Image
           className="mt-12"
@@ -57,14 +59,14 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-64  flex flex-col items-center justify-center">
+      <div className="mt-64 flex flex-col items-center justify-center">
         <h2 className=" text-2xl font-bold text-blue-500">Serviços</h2>
-        <div className="mt-8 flex flex-col gap-6">
+        <div className="mt-8 flex flex-col gap-6 xl:flex-row">
           <Services items={servicesConfig} />
         </div>
       </div>
 
-      <div className="flex flex-col-reverse items-center justify-center pt-64">
+      <div className="flex flex-col-reverse items-center justify-center gap-6 pt-64 xl:flex-row xl:justify-around">
         <Image
           className="mt-12"
           src="/iPhone.svg"
@@ -73,17 +75,19 @@ export default function Home() {
           alt="Várias perspectivas"
         />
 
-        <Button text="Solicite Ajuda" />
-
-        <div>
+        <div className="xl:w-2/4">
           <h2 className="text-2xl font-bold text-blue-500">
             Entre em contato de forma rápida e direta
           </h2>
+
           <p className="text-x mt-6">
             Estamos prontos para atender suas dúvidas e oferecer soluções
             personalizadas. Converse com nossa equipe via WhatsApp e comece a
             transformar sua presença online hoje mesmo.
           </p>
+          <div className="flex w-full items-end justify-center">
+            <Button text="Solicite Ajuda" />
+          </div>
         </div>
       </div>
 
@@ -99,21 +103,22 @@ export default function Home() {
         <div>depots</div>
       </div> */}
 
-      <div className="flex flex-col items-center justify-center pt-64">
-        <div>
-          <h2 className=" text-2xl font-bold text-blue-500">
-            Potencialize sua Presença Online
-          </h2>
+      <div className="flex flex-col items-center justify-center pt-64 xl:flex-row xl:gap-6">
+        <div className="flex flex-col items-center">
+          <div>
+            <h2 className="text-2xl font-bold text-blue-500">
+              Potencialize sua Presença Online
+            </h2>
 
-          <p className="text-x mt-6">
-            Se você busca alcançar resultados extraordinários na era digital,
-            nós podemos ajudar. Com nossa expertise em design e desenvolvimento
-            web, oferecemos soluções sob medida para impulsionar sua presença
-            online e atrair mais clientes.
-          </p>
+            <p className="text-x mt-6">
+              Se você busca alcançar resultados extraordinários na era digital,
+              nós podemos ajudar. Com nossa expertise em design e
+              desenvolvimento web, oferecemos soluções sob medida para
+              impulsionar sua presença online e atrair mais clientes.
+            </p>
+          </div>
+          <Button text="Cresça Online" />
         </div>
-
-        <Button text="Cresça Online" />
 
         <Image
           className="mt-12"
