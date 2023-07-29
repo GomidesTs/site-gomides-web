@@ -1,10 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
-import { Container } from '../components/Container';
+import { footerConfig } from '@/config';
 
-const inter = Inter({ subsets: ['latin'] });
+import { Container } from '@/components/Container';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,8 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="bg-white-300">
         <Container>{children}</Container>
+        <Footer items={footerConfig} />
       </body>
     </html>
   );
