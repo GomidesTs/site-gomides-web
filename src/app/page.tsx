@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import { servicesConfig } from '@/config';
 
+import { Button } from '@/components/Button';
 import { Services } from '@/components/Services';
 
 export default function Home() {
@@ -12,13 +13,15 @@ export default function Home() {
           Uma nova dimensão para a presença online da sua empresa
         </h1>
 
-        <p className="text-x mt-6">
+        <p className="text-x mt-6 text-center">
           Crie uma experiência única e marcante para seus clientes com nossos
           serviços de design e desenvolvimento web totalmente personalizados.
         </p>
 
+        <Button text="Destaque-se" />
+
         <Image
-          className="pt-8"
+          className="pt-24"
           src="/dimensions.svg"
           width={500}
           height={500}
@@ -42,6 +45,8 @@ export default function Home() {
             maior número de clientes satisfeitos.
           </p>
         </div>
+
+        <Button text="Transforme agora" />
 
         <Image
           className="mt-12"
@@ -67,6 +72,8 @@ export default function Home() {
           height={200}
           alt="Várias perspectivas"
         />
+
+        <Button text="Solicite Ajuda" />
 
         <div>
           <h2 className="text-2xl font-bold text-blue-500">
@@ -105,6 +112,9 @@ export default function Home() {
             online e atrair mais clientes.
           </p>
         </div>
+
+        <Button text="Cresça Online" />
+
         <Image
           className="mt-12"
           src="/grafo.svg"
@@ -127,9 +137,7 @@ export default function Home() {
           extraordinários
         </p>
 
-        <button className="mt-8 w-2/4 rounded bg-blue-500 p-4 text-white-100">
-          Fortaleca sua marca
-        </button>
+        <Button text="Fortaleça sua Marca" />
       </div>
     </main>
   );
