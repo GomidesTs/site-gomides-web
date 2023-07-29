@@ -41,6 +41,7 @@
           "module",
           "/^@shared/",
           "absolute",
+          "/^@/config/",
           "/^@/components/",
           "/^@/pages/",
           "/utils/",
@@ -59,16 +60,6 @@
       {
         "ignoreDeclarationSort": true,
         "ignoreMemberSort": false
-      }
-    ],
-    "import/order": [
-      "error",
-      {
-        "groups": [["builtin", "external"], "parent", "sibling", "index"],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
       }
     ]
   }
