@@ -142,7 +142,7 @@ export default function Home() {
           extraordinários
         </p>
 
-        <Button text="Fortaleça sua Marca" />
+        <Button text="Integre a galeria" />
       </div>
     </main>
   );
