@@ -35,7 +35,9 @@ export const Footer = ({ items }: FooterProps) => {
         <div className="flex w-full list-none items-center justify-between text-sm">
           {items.mainFooter.map((item) => (
             <li key={item.text}>
-              <Link href={item.url}>{item.text}</Link>
+              <Link href={item.url} target="_blank">
+                {item.text}
+              </Link>
             </li>
           ))}
         </div>
