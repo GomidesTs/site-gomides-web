@@ -32,7 +32,7 @@ export const Footer = ({ items }: FooterProps) => {
             Seu sucesso é nossa paixão.
           </p>
         </div>
-        <div className="flex w-full list-none items-center justify-between text-sm">
+        <ul className="flex w-full list-none items-center justify-between text-sm">
           {items.mainFooter.map((item) => (
             <li key={item.text}>
               <Link href={item.url} target="_blank">
@@ -40,7 +40,7 @@ export const Footer = ({ items }: FooterProps) => {
               </Link>
             </li>
           ))}
-        </div>
+        </ul>
       </Container>
     </footer>
   );
