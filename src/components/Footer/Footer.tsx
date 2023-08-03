@@ -13,7 +13,7 @@ export const Footer = ({ items }: FooterProps) => {
   return (
     <footer className="mt-64 flex flex-col items-center justify-center bg-white-100 py-6">
       <Image
-        src="/Logo.svg"
+        src="/logo.svg"
         width={50}
         height={50}
         alt="Picture of the author"
