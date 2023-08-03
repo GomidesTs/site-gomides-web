@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Container } from '@/components/Container';
+import { Logo } from '@/components/Logo';
 
 import { FooterItems } from '@/models';
 
@@ -11,19 +11,13 @@ type FooterProps = {
 
 export const Footer = ({ items }: FooterProps) => {
   return (
-    <footer className="mt-64 flex flex-col items-center justify-center bg-white-100 py-6">
-      <Image
-        src="/logo.svg"
-        width={50}
-        height={50}
-        alt="Picture of the author"
-      />
+    <footer className="mt-64 flex flex-col items-center justify-center py-6">
+      <Logo />
       <p className="mt-2 text-center text-sm">
         Todos os Direitos Reservados CNPJ
         <br />
         48.4444.561/0001-06
       </p>
-
       <Container>
         <div className="mb-3 w-full border-b-2 border-blue-500 p-2">
           <p className="mt-4 text-center text-sm">

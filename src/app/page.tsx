@@ -1,14 +1,16 @@
-import Image from 'next/image';
-
 import { servicesConfig } from '@/config';
 
 import { Button } from '@/components/Button';
+import { Code } from '@/components/Code';
+import { Dimensions } from '@/components/Dimensions';
+import { Fork } from '@/components/Fork';
+import { Iphone } from '@/components/Iphone';
 import { Services } from '@/components/Services';
 
 export default function Home() {
   return (
     <main>
-      <div className="flex h-screen flex-col items-center justify-center">
+      <div className="flex h-screen flex-col items-center justify-center gap-6">
         <h1 className="text-center text-3xl font-bold text-blue-500">
           Uma nova dimensão para a presença online da sua empresa
         </h1>
@@ -20,17 +22,11 @@ export default function Home() {
 
         <Button text="Destaque-se" />
 
-        <Image
-          className="pt-24"
-          src="/dimensions.svg"
-          width={500}
-          height={500}
-          alt="Várias perspectivas"
-        />
+        <Dimensions />
       </div>
 
-      <div className="flex flex-col items-center justify-center xl:flex-row xl:gap-4">
-        <div className="flex flex-col items-center justify-center xl:items-start">
+      <div className="flex flex-col items-center justify-center xl:mt-28 xl:flex-row xl:gap-12">
+        <div className="flex flex-col items-center justify-center xl:w-11/12">
           <div className="flex flex-col gap-6">
             <h2 className=" text-2xl font-bold text-blue-500">
               Código sob medida
@@ -50,13 +46,7 @@ export default function Home() {
           <Button text="Transforme agora" />
         </div>
 
-        <Image
-          className="mt-12"
-          src="/code.svg"
-          width={400}
-          height={400}
-          alt="Várias perspectivas"
-        />
+        <Code />
       </div>
 
       <div className="mt-64 flex flex-col items-center justify-center">
@@ -67,13 +57,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col-reverse items-center justify-center gap-6 pt-64 xl:flex-row xl:justify-around">
-        <Image
-          className="mt-12"
-          src="/iPhone.svg"
-          width={200}
-          height={200}
-          alt="Várias perspectivas"
-        />
+        <Iphone />
 
         <div className="xl:w-2/4">
           <h2 className="text-2xl font-bold text-blue-500">
@@ -120,13 +104,7 @@ export default function Home() {
           <Button text="Cresça Online" />
         </div>
 
-        <Image
-          className="mt-12"
-          src="/grafo.svg"
-          width={400}
-          height={400}
-          alt="Várias perspectivas"
-        />
+        <Fork />
       </div>
 
       <div className="bg-cyan-300/50 mt-64 flex flex-col items-center justify-center rounded bg-white-100 px-4 py-8">
