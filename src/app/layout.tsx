@@ -8,8 +8,30 @@ import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Gomides Web',
+  metadataBase: new URL('https://www.gomidesweb.com.br/'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'pt-br': '/pt-br'
+    }
+  },
+  openGraph: {
+    images: './favicon.ico'
+  },
+  keywords: [
+    'Sucesso digital',
+    'Design e desenvolvimento web',
+    'Presença online',
+    'Fortalecer presença online',
+    'Site em Ponte Nova'
+  ],
+  authors: [
+    { name: 'Tulio Gomides' },
+    { name: 'Tiago Gomides', url: 'https://tiagogomides.com.br/' }
+  ],
   description:
-    'Construa um legado digital com a nossa ajuda: uma nova dimensão para a presença online da sua empresa. Nós somos especialistas em criar experiências únicas e marcantes que encantam seus clientes, através de serviços de design e desenvolvimento web totalmente personalizados. Deixe-nos trazer à vida a essência da sua marca e elevar sua presença online a um nível superior. Junte-se a nós na jornada para o sucesso digital e alcance novos patamares com um site feito especialmente para você!'
+    'Crie um legado digital com nosso design web personalizado e SEO avançado. Destaque-se e alcance o sucesso online!',
+  publisher: 'https://vercel.com/'
 };
 
 export default function RootLayout({
@@ -18,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className="bg-white-300">
         <Container>{children}</Container>
         <Footer items={footerConfig} />
