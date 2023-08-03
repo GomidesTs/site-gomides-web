@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.gomidesweb.com.br/
+
+# Sitemaps
+Sitemap: https://www.gomidesweb.com.br/sitemap.xml
