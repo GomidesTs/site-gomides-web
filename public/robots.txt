@@ -2,6 +2,14 @@
 User-agent: *
 Allow: /
 
+# test-bot
+User-agent: test-bot
+Allow: /
+Allow: /cookies
+Allow: /privacy
+Allow: /redirect
+Allow: /terms
+
 # Host
 Host: https://www.gomidesweb.com.br/
 
