@@ -1,10 +1,13 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
 import { footerConfig } from '@/config';
 
 import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Gomides Web',
@@ -31,7 +34,8 @@ export const metadata: Metadata = {
   ],
   description:
     'Crie um legado digital com nosso design web personalizado e SEO avançado. Destaque-se e alcance o sucesso online!',
-  publisher: 'https://vercel.com/'
+  publisher: 'https://vercel.com/',
+  robots: 'index, follow'
 };
 
 export default function RootLayout({
@@ -40,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className={inter.className}>
       <body className="bg-white-300">
         <Container>{children}</Container>
         <Footer items={footerConfig} />
