@@ -10,7 +10,8 @@ import { Footer } from '@/components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gomides Web',
+  title:
+    'GomidesWeb | Moldando experiências digitais por meio de design excepcional.',
   metadataBase: new URL('https://www.gomidesweb.com.br/'),
   alternates: {
     canonical: '/',
