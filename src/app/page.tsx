@@ -1,127 +1,27 @@
-import { servicesConfig } from '@/config';
-
-import { Button } from '@/components/Button';
-import { Code } from '@/components/Code';
-import { Dimensions } from '@/components/Dimensions';
-import { Fork } from '@/components/Fork';
-import { Iphone } from '@/components/Iphone';
-import { Services } from '@/components/Services';
-
 export default function Home() {
   return (
-    <main>
-      <div className="flex h-screen flex-col items-center justify-center gap-6">
-        <h1 className="text-center text-3xl font-bold text-blue-500">
-          Uma nova dimensão para a presença online da sua empresa
-        </h1>
+    <main className="mt-60">
+      <h1 className="text-4xl font-bold text-blue-500 lg:text-8xl">
+        Transforme <br />
+        sua presença online
+      </h1>
 
-        <p className="text-x mt-6 text-center">
-          Crie uma experiência única e marcante para seus clientes com nossos
-          serviços de design e desenvolvimento web totalmente personalizados.
+      <div className="mt-12 flex items-center justify-end gap-6 opacity-70 lg:mt-28">
+        <div className="h-0.5 w-10 bg-gray-500" />
+        <p className="text-center text-sm font-normal text-gray-300 lg:text-lg">
+          Estratégia que transforma experiências
         </p>
-
-        <Button text="Destaque-se" />
-
-        <Dimensions />
       </div>
 
-      <div className="flex flex-col items-center justify-center xl:mt-28 xl:flex-row xl:gap-12">
-        <div className="flex flex-col items-center justify-center xl:w-11/12">
-          <div className="flex flex-col gap-6">
-            <h2 className=" text-2xl font-bold text-blue-500">
-              Código sob medida
-            </h2>
-
-            <p className="text-x">
-              Com a nossa expertise em desenvolvimento tecnológico, criamos
-              soluções exclusivas que se adaptam perfeitamente às suas
-              necessidades, garantindo uma presença online única e de alto
-              desempenho. Desde o design até a codificação do seu produto,
-              personalizamos cada etapa para atender às suas necessidades
-              específicas, transformando a sua realidade digital e alcançando um
-              maior número de clientes satisfeitos.
-            </p>
-          </div>
-
-          <Button text="Transforme agora" />
-        </div>
-
-        <Code />
-      </div>
-
-      <div className="mt-64 flex flex-col items-center justify-center">
-        <h2 className=" text-2xl font-bold text-blue-500">Serviços</h2>
-        <div className="mt-8 flex flex-col gap-6 xl:flex-row">
-          <Services items={servicesConfig} />
-        </div>
-      </div>
-
-      <div className="flex flex-col-reverse items-center justify-center gap-6 pt-64 xl:flex-row xl:justify-around">
-        <Iphone />
-
-        <div className="xl:w-2/4">
-          <h2 className="text-2xl font-bold text-blue-500">
-            Entre em contato de forma rápida e direta
-          </h2>
-
-          <p className="text-x mt-6">
-            Estamos prontos para atender suas dúvidas e oferecer soluções
-            personalizadas. Converse com nossa equipe via WhatsApp e comece a
-            transformar sua presença online hoje mesmo.
-          </p>
-          <div className="flex w-full items-end justify-center">
-            <Button text="Solicite Ajuda" />
-          </div>
-        </div>
-      </div>
-
-      {/* <div className="flex  flex-col items-center justify-center">
-        <h2>Trabalhos excepcionais e feedbacks positivos</h2>
-
-        <p className="text-x">
-          Confira alguns dos nossos projetos de sucesso e descubra como ajudamos
-          empresas a alcançar seus objetivos online. Nossa paixão é criar
-          resultados extraordinários para nossos clientes.
+      <div className="mt-14 flex items-end justify-end lg:mt-28">
+        <p className="w-11/12 text-left text-lg font-medium text-gray-300 lg:w-5/6 lg:text-4xl">
+          Com a nossa expertise em desenvolvimento tecnológico, criamos soluções
+          exclusivas que se adaptam perfeitamente às suas necessidades,
+          garantindo uma presença online única e de alto desempenho.
         </p>
-
-        <div>depots</div>
-      </div> */}
-
-      <div className="flex flex-col items-center justify-center pt-64 xl:flex-row xl:gap-6">
-        <div className="flex flex-col items-center">
-          <div>
-            <h2 className="text-2xl font-bold text-blue-500">
-              Potencialize sua Presença Online
-            </h2>
-
-            <p className="text-x mt-6">
-              Se você busca alcançar resultados extraordinários na era digital,
-              nós podemos ajudar. Com nossa expertise em design e
-              desenvolvimento web, oferecemos soluções sob medida para
-              impulsionar sua presença online e atrair mais clientes.
-            </p>
-          </div>
-          <Button text="Cresça Online" />
-        </div>
-
-        <Fork />
       </div>
 
-      <div className="bg-cyan-300/50 mt-64 flex flex-col items-center justify-center rounded bg-white-100 px-4 py-8">
-        <h2 className=" text-2xl font-bold text-blue-500">
-          Faça parte da nossa galeria de sucessos
-        </h2>
-
-        <p className="mt-6">
-          Queremos destacar o seu projeto e compartilhar o seu sucesso com o
-          mundo! Ao escolher nossos serviços de design e desenvolvimento web,
-          você terá a oportunidade de ter o seu projeto em nossa galeria de
-          sucessos, mostrando como sua empresa alcançou resultados
-          extraordinários
-        </p>
-
-        <Button text="Integre a galeria" />
-      </div>
+      <div className="relative mt-28 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:right-0 before:h-1 before:w-8 before:bg-blue-500/80 lg:mt-28"></div>
     </main>
   );
 }
