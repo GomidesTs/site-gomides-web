@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="mt-60">
+    <main className="lg:mt-60">
       <section>
         <h1 className="text-4xl font-bold text-blue-500 lg:text-8xl">
           Transforme <br />
@@ -77,6 +77,29 @@ export default function Home() {
             Histórias de sucesso
           </p>
         </div>
+        <h2 className="mt-8 text-2xl text-black-500/90 lg:text-3xl">
+          Nossos parceiros transformados pela GomidesWeb
+        </h2>
+
+        <p className="mt-8 w-full text-base text-black-500/80 lg:w-2/3 lg:text-xl">
+          Junte-se a nós, se sua empresa busca resultados reais através de um
+          desenvolvimento estratégico. Estamos prontos para fazer a diferença ao
+          seu lado.
+        </p>
+
+        <div className="mt-12 grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
+          <div className="h-80 w-full cursor-pointer bg-black-500/80 transition-colors duration-300 ease-out hover:bg-black-500"></div>
+          <div className="h-80 w-full cursor-pointer bg-black-500/80 transition-colors duration-300 ease-out hover:bg-black-500 lg:col-span-2"></div>
+          <div className="h-80 w-full cursor-pointer bg-black-500/80 transition-colors duration-300 ease-out hover:bg-black-500"></div>
+          <div className="h-80 w-full cursor-pointer bg-black-500/80 transition-colors duration-300 ease-out hover:bg-black-500"></div>
+          <div className="h-80 w-full cursor-pointer bg-black-500/80 transition-colors duration-300 ease-out hover:bg-black-500"></div>
+        </div>
+
+        <div className="mt-12 flex cursor-pointer justify-end hover:text-blue-500">
+          <p className="font-medium">Explore nossos projetos</p>
+        </div>
+
+        <div className="relative mt-2 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:right-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
       </section>
     </main>
   );
