@@ -28,7 +28,7 @@ export default function Home() {
       <section className="mt-12 lg:mt-28">
         <div className="flex items-center justify-start gap-6 opacity-70">
           <div className="h-0.5 w-10 bg-gray-500" />
-          <p className="text-center text-sm font-normal uppercase text-gray-300">
+          <p className="text-center text-sm font-normal uppercase tracking-wide text-gray-300">
             Sobre nós
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
       <section className="mt-28">
         <div className="flex items-center justify-start gap-6 opacity-70">
           <div className="h-0.5 w-10 bg-gray-500" />
-          <p className="text-center text-sm font-normal uppercase text-gray-300">
+          <p className="text-center text-sm font-normal uppercase tracking-wide text-gray-300">
             Histórias de sucesso
           </p>
         </div>
@@ -100,6 +100,84 @@ export default function Home() {
         </div>
 
         <div className="relative mt-2 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:right-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
+      </section>
+
+      <section className="mb-28 mt-28">
+        <div className="flex items-center justify-start gap-6 opacity-70">
+          <div className="h-0.5 w-10 bg-gray-500" />
+          <p className="text-center text-sm font-normal uppercase tracking-wide text-gray-300">
+            Como impulsionar sua empresa
+          </p>
+        </div>
+
+        <div className="mt-8 flex flex-col justify-between gap-6 lg:flex-row">
+          <div className="w-full">
+            <div className="before:left-0-0 relative h-px w-32 bg-blue-500/50 before:absolute before:top-0 before:h-px before:w-8 before:bg-blue-500"></div>
+            <p className="text-gray-300">
+              Somos focados em criar experiências digitais únicas por meio da
+              convergência entre design e tecnologia.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-20 bg-black-500/80"></div>
+
+              <div className="flex w-3/4 flex-col gap-0.5">
+                <h3 className="text-lg font-medium">Websites</h3>
+                <p className="text-xs text-gray-300">
+                  Se destacam. Cada projeto é meticulosamente desenvolvido,
+                  especialmente para dispositivos móveis.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-20 bg-black-500/80"></div>
+
+              <div className="flex w-3/4 flex-col gap-0.5">
+                <h3 className="text-lg font-medium">Landing Pages</h3>
+                <p className="text-xs text-gray-300">
+                  Impactantes. Potencializamos seus produtos e serviços,
+                  impulsionando conversões e elevando seu faturamento.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-20 bg-black-500/80"></div>
+
+              <div className="flex w-3/4 flex-col gap-0.5">
+                <h3 className="text-lg font-medium">UI/UX Aprimorado</h3>
+                <p className="text-xs text-gray-300">
+                  Design intuitivo e experiência do usuário refinada. Criamos
+                  interfaces que encantam e interações que cativam, elevando seu
+                  produto para um novo nível
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-20 bg-black-500/80"></div>
+
+              <div className="flex w-3/4 flex-col gap-0.5">
+                <h3 className="text-lg font-medium">Anúncios</h3>
+                <p className="text-xs text-gray-300">
+                  Campanhas publicitárias que entregam resultados reais.
+                  Transformamos ideias em anúncios cativantes, direcionando o
+                  tráfego certo e impulsionando conversões significativas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-5 text-xs text-gray-300 lg:mt-0 lg:w-2/5">
+          Seja começando do zero ou aprimorando o que já existe, estamos prontos
+          para construir o sucesso junto com você
+        </p>
+
+        <div className="relative mt-28 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:left-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
       </section>
     </main>
   );
