@@ -102,7 +102,7 @@ export default function Home() {
         <div className="relative mt-2 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:right-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
       </section>
 
-      <section className="mb-28 mt-28">
+      <section className="mb-28">
         <div className="flex items-center justify-start gap-6 opacity-70">
           <div className="h-0.5 w-10 bg-gray-500" />
           <p className="text-center text-sm font-normal uppercase tracking-wide text-gray-300">
@@ -178,6 +178,48 @@ export default function Home() {
         </p>
 
         <div className="relative mt-28 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:left-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
+      </section>
+
+      <section className="mt-28">
+        <div className="flex gap-2">
+          <span className="-mt-14 text-8xl leading-none text-gray-300">
+            &#8220;
+          </span>
+
+          <div className="flex flex-col gap-3">
+            <p className="text-xl text-black-500/90 lg:text-4xl">
+              Desde o atendimento personalizado até o desenvolvimento do
+              projeto, só tenho elogios pelo excelente trabalho. O resultado
+              superou minhas expectativas e o projeto ficou ainda melhor do que
+              eu imaginava.
+            </p>
+
+            <p className="text-2xl font-medium text-black-500">
+              Daniela Martin
+            </p>
+
+            <p className="text-sm text-black-500/50">Eng. Alimentos</p>
+          </div>
+        </div>
+
+        <div className="relative mt-28 h-px w-full bg-blue-500/80 before:absolute before:-top-1 before:right-0 before:h-1 before:w-8 before:bg-blue-500/80"></div>
+      </section>
+
+      <section className="mt-28 flex flex-col gap-8 rounded bg-black-500/10 p-4 lg:items-center lg:justify-center">
+        <h2 className="text-xl font-medium lg:text-4xl">
+          Faça parte da nossa galeria de sucessos
+        </h2>
+        <p className="text-xs lg:w-2/3 lg:text-xl">
+          Queremos destacar o seu projeto e compartilhar o seu sucesso com o
+          mundo! Ao escolher nossos serviços de design e desenvolvimento web,
+          você terá a oportunidade de ter o seu projeto em nossa galeria de
+          sucessos, mostrando como sua empresa alcançou resultados
+          extraordinários
+        </p>
+
+        <button className="rounded bg-blue-300 p-2 text-white-300">
+          Integre a galeria
+        </button>
       </section>
     </main>
   );
