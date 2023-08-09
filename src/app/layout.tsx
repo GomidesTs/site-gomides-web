@@ -2,10 +2,10 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { footerConfig } from '@/config';
+// import { footerConfig } from '@/config';
 
 import { Container } from '@/components/Container';
-import { Footer } from '@/components/Footer';
+// import { Footer } from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -48,7 +48,7 @@ export default function RootLayout({
     <html lang="pt-br" className={inter.className}>
       <body className="bg-white-300">
         <Container>{children}</Container>
-        <Footer items={footerConfig} />
+        {/* <Footer items={footerConfig} /> */}
       </body>
     </html>
   );
