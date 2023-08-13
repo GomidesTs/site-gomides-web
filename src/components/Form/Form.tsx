@@ -10,7 +10,8 @@ export const Form = () => {
     handleSubmit,
     register,
     optionsServices,
-    optionsTerm
+    optionsTerm,
+    isSubmitSuccessful
   } = useDiscord();
 
   return (
@@ -157,23 +158,32 @@ export const Form = () => {
         )}
       </div>
 
-      <div className="flex justify-between">
-        <button
-          type="submit"
-          className="mt-4 rounded bg-blue-300 p-4 text-white-300"
-        >
-          Enviar
-        </button>
+      <div className="flex flex-col gap-2">
+        <div className="flex justify-between">
+          <button
+            type="submit"
+            className="mt-4 rounded bg-blue-300 p-4 text-white-300"
+          >
+            Enviar
+          </button>
 
-        <div className="flex items-center gap-2">
-          <Logo />
-          <div>
-            <h6 className="text-sm font-bold">Prefere uma reunião?</h6>
-            <p className="cursor-pointer text-sm text-black-500">
-              Agende com a Gio
-            </p>
+          <div className="flex items-center gap-2">
+            <Logo />
+            <div>
+              <h6 className="text-sm font-bold">Prefere uma reunião?</h6>
+              <p className="cursor-pointer text-sm text-black-500">
+                Agende com a GomidesWeb
+              </p>
+            </div>
           </div>
         </div>
+        {isSubmitSuccessful && (
+          <p className="text-sm font-medium text-esmerald-500">
+            Suas informações foram submetidas. Aguarde o contato da nossa equipe
+            através do número de WhatsApp fornecido para trabalharmos juntos no
+            seu projeto.
+          </p>
+        )}
       </div>
     </form>
   );

@@ -11,7 +11,7 @@ export const useDiscord = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors }
+    formState: { errors, isSubmitSuccessful }
   } = useForm<FormProps>({
     criteriaMode: 'all',
     mode: 'all',
@@ -105,6 +105,7 @@ export const useDiscord = () => {
     errors,
     register,
     handleSubmit,
-    handleFormSubmit
+    handleFormSubmit,
+    isSubmitSuccessful
   };
 };
