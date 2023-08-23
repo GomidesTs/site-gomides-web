@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="lg:mt-60">
+    <main className="lg:mt-12">
       <section>
         <h1 className="text-4xl font-bold text-blue-500 lg:text-8xl">
           Transforme <br />
@@ -110,12 +110,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-8 flex flex-col justify-between gap-6 lg:flex-row">
+        <div className="mt-8 flex flex-col justify-between gap-6 lg:flex-row ">
           <div className="w-full">
-            <div className="before:left-0-0 relative h-px w-32 bg-blue-500/50 before:absolute before:top-0 before:h-px before:w-8 before:bg-blue-500"></div>
-            <p className="text-gray-300">
-              Somos focados em criar experiências digitais únicas por meio da
-              convergência entre design e tecnologia.
+            <div className="relative h-px w-32 bg-blue-500/50 before:absolute before:left-0 before:top-0 before:h-px before:w-8 before:bg-blue-500"></div>
+            <p className="top-8 text-gray-300 lg:sticky">
+              Criamos experiências móveis únicas para impulsionar resultados.
+              Nossas interfaces têm propósito, foco em pessoas e conquistam
+              sucesso. Elevamos sua marca, ampliamos alcance e aprimoramos
+              experiências.
             </p>
           </div>
 
