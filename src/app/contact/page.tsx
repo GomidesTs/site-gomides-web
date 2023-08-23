@@ -37,12 +37,12 @@ export default function Contact() {
 
         <div className="mt-14 flex flex-col gap-8 lg:flex-row">
           <Form />
-          <div className="hidden w-2/5 lg:inline-block">
+          <div className="top-8 hidden w-2/5 lg:inline-block">
             <span>É bom saber</span>
 
             <h4>Como trabalhamos</h4>
 
-            <ul className="mt-6 flex list-disc flex-col gap-2">
+            <ul className="sticky top-8 mt-6 flex list-disc flex-col gap-2">
               <li className="flex flex-col font-medium">
                 Sempre temos tempo para conversar
                 <span className="mt-2 text-sm text-gray-300">
