@@ -42,7 +42,7 @@ export default function studio() {
           que deram vida a este projeto.
         </h2>
 
-        <div className="flex flex-col">
+        <div className="flex w-full flex-col">
           <div className="mt-8 flex gap-8">
             <div className="h-52 w-52 bg-black-500"></div>
 
@@ -57,7 +57,7 @@ export default function studio() {
             </div>
           </div>
 
-          <div className="mt-8 flex gap-8">
+          <div className="mt-16 flex justify-end gap-8">
             <div className="w-1/2">
               <h3 className="text-lg font-semibold">Tulio Gomides</h3>
 
